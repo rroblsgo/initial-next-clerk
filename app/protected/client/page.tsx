@@ -8,6 +8,7 @@ export default function Page() {
   if (!isLoaded || !isSignedIn) {
     return null
   }
+  console.log('client user', user)
 
   return (
     <section className='py-24'>

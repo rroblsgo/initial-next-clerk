@@ -7,6 +7,10 @@ export async function GET() {
   if (!userId) {
     return new NextResponse('Unauthorized', { status: 401 })
   }
+  // const user = await auth()
+  // const token = await user.getToken()
+  // console.log('api user', user)
+  // console.log('api token', token)
 
   return NextResponse.json({ userId }, { status: 200 })
 }
